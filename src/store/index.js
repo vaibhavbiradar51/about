@@ -32,6 +32,8 @@ export default new Vuex.Store({
       },
       getUnits: function(state) {
         state.tasks = JSON.parse(window.localStorage.getItem('tasks'))
+        if(state.tasks == null)
+        window.localStorage.setItem('tasks',JSON.stringify([]))    
       },
       doneTask(state,id){
         let task = state.tasks.filter(task => task.id === id)[0]
