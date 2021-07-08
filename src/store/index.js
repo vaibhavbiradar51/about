@@ -6,7 +6,7 @@ import io from 'socket.io-client'
 Vue.use(Vuex)
 
 
-const host = 'http://localhost:3030';
+const host = 'https://backend2-bptzp623xa-uc.a.run.app';
 const socket = io(host);
 
 export const app = feathers()
