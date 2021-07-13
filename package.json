@@ -4,11 +4,13 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve --port 4000",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "serve:standalone": "vue-cli-service serve --mode standalone"
   },
   "dependencies": {
     "core-js": "^3.6.5",
     "feathers-client": "^2.4.0",
+    "single-spa-vue": "^2.1.0",
     "socket.io-client": "^2.1.1",
     "vue": "^2.6.11",
     "vue-router": "^3.2.0",
@@ -22,6 +24,7 @@
     "@vue/cli-service": "~4.5.0",
     "sass": "~1.32.0",
     "sass-loader": "^10.0.0",
+    "vue-cli-plugin-single-spa": "~2.2.0",
     "vue-cli-plugin-vuetify": "~2.4.1",
     "vue-template-compiler": "^2.6.11",
     "vuetify-loader": "^1.7.0"
